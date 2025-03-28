@@ -1,0 +1,13 @@
+Este projeto consiste em um banco de dados para armazenar e gerenciar informações sobre cursos. Ele pode incluir dados como nome do curso, duração, área de estudo, entre outros. O objetivo é fornecer uma estrutura para organizar informações relevantes sobre cursos oferecidos.
+
+Funcionalidades
+Armazenamento de dados relacionados aos cursos (nome, descrição, duração, etc.).
+
+Consulta e listagem de cursos armazenados.
+
+Potencial para adicionar novas informações e dados relacionados aos cursos.
+
+Tecnologias Utilizadas
+Banco de dados MySQL
+
+este trabalho esta na licença mit
