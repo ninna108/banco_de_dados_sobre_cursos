@@ -1,0 +1,57 @@
+create database atvcarla;
+use atvcarla;
+
+create table usuarios (
+id_usuario int auto_increment primary key,
+nome varchar(100) not null,
+email varchar(100),
+senha varchar(15)
+);
+
+create table alunos (
+id_aluno int auto_increment primary key,
+nome varchar(100) not null,
+endereco varchar(255) not null,
+telefone varchar(15) not null,
+pagamento_status enum ('pago','não pago')
+);
+
+create table professores (
+id_professor int auto_increment primary key,
+nome varchar(100) not null,
+cargo varchar(30) not null,
+email varchar(100) not null,
+telefone  varchar(15) not null
+);
+
+create table cursos (
+id_curso int auto_increment primary key,
+nome  varchar(100) not null,
+descricao text,
+duracao time,
+preco decimal (10,2)
+);
+
+create table inscricoes (
+id_aluno int,
+id_curso int, 
+foreign key (id_aluno) references alunos (id_aluno),
+foreign key (id_curso) references cursos (id_aluno)
+);
+
+create table notas (
+nota decimal(10),
+alunos varchar(100),
+materia varchar(100) 
+);
+
+insert into notas(nota,aluno,materia)
+values
+('8','ryan','SQL'),
+('2','brayan','UML'),
+('10','warley','ingles'),
+('1','samara','desenvolvimento web'),
+('9','fernando','relações humenas');
+
+
+
